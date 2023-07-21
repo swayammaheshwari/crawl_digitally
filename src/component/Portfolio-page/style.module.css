@@ -1,0 +1,30 @@
+.img_div {
+  text-align: center;
+  margin: 20px;
+}
+
+.responsive_img {
+  max-width: 100%; /* Set maximum width to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .tab-view-only {
+    display: none !important;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .mobile-view-only {
+    display: none !important;
+  }
+}
+/* .img_div:hover img {
+  scale: 1.2;
+}
+
+.img_div img {
+  transition: all ease 1s;
+} */

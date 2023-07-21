@@ -1,0 +1,28 @@
+.portfolio {
+  width: 70%;
+  margin: 4rem auto;
+  padding: auto;
+  text-align: center;
+}
+
+.portfolio h1 {
+  font-size: 2rem;
+}
+
+.portfolio p {
+  opacity: 0.8;
+}
+
+.portfolio_div {
+  margin: 3rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio_div hr {
+  width: 10%;
+  height: 0;
+}
+.portfolio_div h3 {
+  margin: auto 1em;
+}
