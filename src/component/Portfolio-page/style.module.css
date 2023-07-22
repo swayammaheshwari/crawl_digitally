@@ -13,7 +13,7 @@
 }
 
 .responsive_img {
-  max-width: 100%; /* Set maximum width to 100% of its container */
+  /* Set maximum width to 100% of its container */
   height: auto; /* Maintain aspect ratio */
 }
 
