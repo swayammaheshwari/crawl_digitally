@@ -3,6 +3,15 @@
   margin: 20px;
 }
 
+.you_div {
+  text-align: center;
+  margin: 20px;
+}
+.you_div iframe {
+  border: none;
+  border-radius: 12px;
+}
+
 .responsive_img {
   max-width: 100%; /* Set maximum width to 100% of its container */
   height: auto; /* Maintain aspect ratio */
