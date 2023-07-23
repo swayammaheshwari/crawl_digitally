@@ -1,5 +1,5 @@
 import { Stack } from "@mui/material";
-import styles from "./assets/style.module.css";
+import styles from "./style.module.css";
 import Button from "@mui/material/Button";
 
 const Contact = () => {

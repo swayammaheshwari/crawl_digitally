@@ -1,0 +1,26 @@
+.background-image-div {
+  position: relative;
+  width: 400px; /* Adjust the width and height as needed */
+  height: 400px;
+  background-color: rgb(235, 224, 224);
+  overflow: hidden;
+}
+
+.reveal-circle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-image: url("../../assets/portfolio_2.png"); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  transition: width 0.5s, height 0.5s;
+}
+
+.background-image-div:hover .reveal-circle {
+  width: 200px; /* Adjust the width and height of the reveal circle */
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

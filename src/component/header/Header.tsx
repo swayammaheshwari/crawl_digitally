@@ -1,4 +1,4 @@
-import styles from "./assets/style.module.css";
+import styles from "./style.module.css";
 
 const Header = () => {
   const action = () => {
