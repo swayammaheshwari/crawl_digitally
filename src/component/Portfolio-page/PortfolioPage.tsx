@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import styles from "./style.module.css";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Typography } from "@mui/material";
 
 export default function PortfolioPage() {
