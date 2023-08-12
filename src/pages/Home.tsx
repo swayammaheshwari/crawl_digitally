@@ -3,7 +3,7 @@ import Footer from "../component/Footer/Footer";
 import Header from "../component/header/Header";
 import Navbar from "../component/Navbar/NavBar";
 import PortfolioContain from "../component/porfolio/Portfolio";
-import { BackGroundHeader } from "../component/test/portfolio/page";
+import { BackGroundHeader } from "../component/test/Header/page";
 
 function Home() {
   return (

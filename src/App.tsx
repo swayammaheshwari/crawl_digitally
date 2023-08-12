@@ -9,7 +9,6 @@ import { Test } from "./component/test/main";
 
 const theme = createTheme({
   direction: 'rtl',
-  // other theme properties
 });
 
 function App() {

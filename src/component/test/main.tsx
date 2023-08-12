@@ -1,9 +1,13 @@
 import React from 'react';
-import { BackGroundHeader } from './portfolio/page';
+import { BackGroundHeader } from './Header/page';
+import CursorEffectComponent from './CursorEffect/page';
 
 export const Test: React.FC = () => {
     return (
-        <BackGroundHeader />
+        <>
+            <BackGroundHeader />
+            {/* <CursorEffectComponent /> */}
+        </>
     );
 };
 
