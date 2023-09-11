@@ -2,7 +2,7 @@ import { Stack } from "@mui/material";
 import styles from "./style.module.css";
 import Button from "@mui/material/Button";
 
-const Contact = () => {
+const ContactUs = () => {
   return (
     <>
       <div className={styles.contact}>
@@ -28,4 +28,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;

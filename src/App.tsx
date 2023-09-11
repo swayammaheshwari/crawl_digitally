@@ -5,7 +5,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
-import { Test } from "./component/test/main";
+import Test from "./pages/test";
 
 const theme = createTheme({
   direction: 'rtl',

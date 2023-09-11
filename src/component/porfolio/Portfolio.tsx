@@ -1,3 +1,4 @@
+import SliderComponent from "../../test/Portfolio/PortfolioTest";
 import Gallery from "../Carousal/Carousal";
 import styles from "./style.module.css";
 
@@ -19,7 +20,6 @@ const PortfolioContain = () => {
           <h3>Portfolio</h3>
           <hr />
         </div>
-        <Gallery />
       </section>
     </>
   );
