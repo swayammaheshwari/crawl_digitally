@@ -1,4 +1,4 @@
-import Header from "../../component/header/Header";
+import Header from "../header/Header";
 import styles from "./effect.module.css";
 
 const Shadow: React.FC = () => {

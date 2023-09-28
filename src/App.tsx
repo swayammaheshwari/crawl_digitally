@@ -5,7 +5,6 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
-import Test from "./pages/test";
 
 const theme = createTheme({
   direction: 'rtl',
@@ -34,10 +33,6 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
-        },
-        {
-          path: "/test",
-          element: <Test />,
         },
       ],
     },

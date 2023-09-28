@@ -1,5 +1,4 @@
-import SliderComponent from "../../test/Portfolio/PortfolioTest";
-import Gallery from "../Carousal/Carousal";
+
 import styles from "./style.module.css";
 
 const PortfolioContain = () => {

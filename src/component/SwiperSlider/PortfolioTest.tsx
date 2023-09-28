@@ -39,7 +39,7 @@ const SliderComponent: React.FC = () => {
     }, []);
 
     return (
-        <div className="myswiper zindex">
+        <div className="myswiper">
             <div className="swiper">
                 <div className="swiper-wrapper">
                     {[1, 2, 3, 4, 5].map((index) => (
