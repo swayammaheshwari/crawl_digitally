@@ -2,7 +2,7 @@
 import VideoSection from "../videoSection/VideoSection";
 import styles from "./assets/style.module.css";
 
-const PortfolioContain = () => {
+const AboutComponent = () => {
   return (
     <>
       <section className={styles.portfolio}>
@@ -23,14 +23,9 @@ const PortfolioContain = () => {
             heights.
           </p>
         </div>
-        <div className={styles.portfolio_div}>
-          <hr />
-          <h3>Portfolio</h3>
-          <hr />
-        </div>
       </section>
     </>
   );
 };
 
-export default PortfolioContain;
+export default AboutComponent;

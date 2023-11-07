@@ -53,7 +53,7 @@ function Navbar() {
                   }
                   onClick={closeMobileMenu}
                 >
-                  Career
+                  About
                 </NavLink>
               </li>
               <li className="nav-item">

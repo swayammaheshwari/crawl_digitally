@@ -1,17 +1,24 @@
 import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
+import { useEffect, useState } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { Preloader } from "./component/Preloader/Preloader";
 
 const theme = createTheme({
-  direction: 'rtl',
+  direction: "rtl",
   // other theme properties
 });
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   const router = createBrowserRouter([
     {
       children: [
@@ -39,11 +46,27 @@ function App() {
     },
   ]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 4000);
+    // ////////////SCROLL-ANIMATION////////////
+    AOS.init({
+      offset: 100, // Adjust this value as needed
+      duration: 1000, // Animation duration
+      easing: "ease", // Easing type
+      once: true, // Only animate elements once
+    });
+  }, []);
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <RouterProvider router={router} />
-      </ThemeProvider>
+      {/* {isLoading ? (
+        <Preloader />
+      ) : ( */}
+        <ThemeProvider theme={theme}>
+          <RouterProvider router={router} />
+        </ThemeProvider>
+      {/* )} */}
     </>
   );
 }
