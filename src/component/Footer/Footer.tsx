@@ -4,6 +4,7 @@ import emoji from "./assets/handshake.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { BiLogoFacebookSquare } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Footer = () => {
   const stylesbg: object = {
     main: {
@@ -49,10 +50,18 @@ const Footer = () => {
 
             <div className={styles.list_box}>
               <ul className={styles.list}>
-                <li className="cursor-pointer" >About Us</li>
-                <li className="cursor-pointer" >Portfolio</li>
-                <li className="cursor-pointer" >Career</li>
-                <li className="cursor-pointer" >Services</li>
+                <li className="cursor-pointer">
+                  <Link to="/career"> About Us</Link>
+                </li>
+                <li className="cursor-pointer">
+                  <Link to="/portfolio">Portfolio </Link>{" "}
+                </li>
+                <li className="cursor-pointer">
+                  <Link to="/contact">Contact Us </Link>{" "}
+                </li>
+                <li className="cursor-pointer">
+                  <Link to="/services">Services </Link>{" "}
+                </li>
               </ul>
             </div>
             <div>
