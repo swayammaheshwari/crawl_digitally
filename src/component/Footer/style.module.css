@@ -116,8 +116,9 @@
     text-align: center !important;
   }
 
-  .list li {
+  .list > li {
     margin: auto;
+    cursor: pointer;
   }
   .chat div h1 img {
     width: 2rem;
@@ -172,6 +173,7 @@
   height: 25px; /* Set height to match the SVG */
   padding: 5px; /* Adjust padding as needed */
   display: inline-block;
+  cursor: pointer;
 }
 
 .icon svg {

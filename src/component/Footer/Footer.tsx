@@ -26,27 +26,33 @@ const Footer = () => {
           <div className={styles.flex_box}>
             <div className="flex text-center justify-center align-middle">
               <div className="flex text-center justify-center align-middle">
-                <AiFillLinkedin style={{ width: "50px", height: "50px" }} />
+                <AiFillLinkedin
+                  style={{ width: "50px", height: "50px", cursor: "pointer" }}
+                />
               </div>
               <div className="flex text-center justify-center align-middle">
-                <AiFillInstagram style={{ width: "40px", height: "40px" }} />
+                <AiFillInstagram
+                  style={{ width: "40px", height: "40px", cursor: "pointer" }}
+                />
               </div>
               <div className="flex text-center justify-center align-middle">
-                <BsYoutube style={{ width: "40px", height: "40px" }} />
+                <BsYoutube
+                  style={{ width: "40px", height: "40px", cursor: "pointer" }}
+                />
               </div>
               <div className="flex text-center justify-center align-middle">
                 <BiLogoFacebookSquare
-                  style={{ width: "40px", height: "40px" }}
+                  style={{ width: "40px", height: "40px", cursor: "pointer" }}
                 />
               </div>
             </div>
 
             <div className={styles.list_box}>
               <ul className={styles.list}>
-                <li>About Us</li>
-                <li>Portfolio</li>
-                <li>Career</li>
-                <li>Services</li>
+                <li className="cursor-pointer" >About Us</li>
+                <li className="cursor-pointer" >Portfolio</li>
+                <li className="cursor-pointer" >Career</li>
+                <li className="cursor-pointer" >Services</li>
               </ul>
             </div>
             <div>
