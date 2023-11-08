@@ -106,7 +106,7 @@
     text-align: center;
   }
   .flex_box {
-    flex-direction: column;
+    flex-direction: column  ;
     text-align: center !important;
   }
   .para {
@@ -189,5 +189,19 @@
 @media (max-width : 370px){
   .list{
     flex-direction: column;
+  }
+  .list > li {
+    font-size: 1rem !important ;
+  }
+  .para {
+    font-size: 1rem !important ;
+  }
+}
+@media(max-width :500px){
+  .list > li {
+    font-size: 1rem !important ;
+  }
+  .para {
+    font-size: 1rem !important ;
   }
 }

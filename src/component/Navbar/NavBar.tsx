@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import icon from "../../assets/icon.png";
 import "./Navbar.css";
 
@@ -10,6 +10,7 @@ function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
 
   return (
     <>
@@ -27,7 +28,7 @@ function Navbar() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")  
                   }
                   onClick={closeMobileMenu}
                 >
@@ -38,18 +39,18 @@ function Navbar() {
                 <NavLink
                   to="/contact"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated" : "")
                   }
                   onClick={closeMobileMenu}
                 >
-                  Contact Us
+                  Contact
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
                   to="/career"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")
                   }
                   onClick={closeMobileMenu}
                 >
@@ -60,7 +61,7 @@ function Navbar() {
                 <NavLink
                   to="/portfolio"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")
                   }
                   onClick={closeMobileMenu}
                 >
@@ -71,7 +72,7 @@ function Navbar() {
                 <NavLink
                   to="/services"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")
                   }
                   onClick={closeMobileMenu}
                 >

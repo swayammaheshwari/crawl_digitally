@@ -49,24 +49,19 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 4000);
+    }, 3000);
     // ////////////SCROLL-ANIMATION////////////
-    AOS.init({
-      offset: 100, // Adjust this value as needed
-      duration: 1000, // Animation duration
-      easing: "ease", // Easing type
-      once: true, // Only animate elements once
-    });
+  
   }, []);
   return (
     <>
-      {/* {isLoading ? (
+      {isLoading ? (
         <Preloader />
-      ) : ( */}
+      ) : (
         <ThemeProvider theme={theme}>
           <RouterProvider router={router} />
         </ThemeProvider>
-      {/* )} */}
+      )}
     </>
   );
 }

@@ -7,7 +7,7 @@ export default function PortfolioPage() {
   return (
     <>
       <Box m={2}>
-        <Typography variant="h2" align="center">
+        <Typography variant="h2" lineHeight="2" align="center">
           Branding
         </Typography>
         <Box
@@ -40,7 +40,7 @@ export default function PortfolioPage() {
         </Box>
       </Box>
       <Box m={2}>
-        <Typography variant="h2" align="center">
+        <Typography variant="h2" lineHeight="2" align="center">
           {" "}
           Social Media{" "}
         </Typography>
@@ -102,14 +102,14 @@ export default function PortfolioPage() {
         </Grid>
       </Box>
       <Box m={2}>
-        <Typography variant="h2" align="center">
+        <Typography variant="h2" lineHeight="2" align="center"  >
           Youtube
         </Typography>
         <Grid container spacing={1}>
           <Grid item xs={12} sm={12} md={4}>
             <div className={styles.you_div}>
               <iframe
-                width="460"
+                width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/ZlKnLyKO5UU"
                 title="YouTube video player"
@@ -120,7 +120,7 @@ export default function PortfolioPage() {
           <Grid item xs={12} sm={12} md={4}>
             <div className={styles.you_div}>
               <iframe
-                width="460"
+                width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/ZlKnLyKO5UU"
                 title="YouTube video player"
@@ -131,7 +131,7 @@ export default function PortfolioPage() {
           <Grid item xs={12} sm={12} md={4}>
             <div className={styles.you_div}>
               <iframe
-                width="460"
+                width="100%"
                 height="315"
                 src="https://www.youtube.com/embed/ZlKnLyKO5UU"
                 title="YouTube video player"
