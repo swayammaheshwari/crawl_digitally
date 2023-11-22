@@ -57,7 +57,7 @@ body {
 .focus {
   position: absolute;
 
-  background: url("shopping.png");
+  background: url("crawlbg.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
