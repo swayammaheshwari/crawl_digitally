@@ -35,6 +35,7 @@
 }  */
 
 .chat {
+  font-family: 'Sora', sans-serif;
   width: 100%;
   margin-top: 50px;
   background-color: #fff;
@@ -42,19 +43,20 @@
   border-top-left-radius: 69px;
 }
 .chat div {
-  padding-top: 20px;
+  padding-top: 15px;
   width: 80%;
   margin: auto;
 }
 .chat div hr {
   background-color: #101010;
+  height: 2px;
 }
 .chat div h1 {
   color: #101010;
   text-align: center;
   font-style: normal;
-  font-weight: 700;
-  margin-bottom: 50px;
+  font-weight: bolder;
+  margin-bottom: 35px;
   /* text-align: justify; */
   /* word-spacing: -50px; */
   justify-items: center;
@@ -71,7 +73,7 @@
   padding-bottom: 30px;
 }
 .flex_box div {
-  width: auto;
+  width: 100%;
 }
 
 .list {
@@ -81,8 +83,8 @@
   list-style: none;
   color: #232323;
   text-align: center;
-  padding: 5px;
-  font-size: 1.25rem;
+  padding: 8px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5rem; /* 120% */
@@ -91,12 +93,36 @@
 .para {
   color: #000;
   text-align: right;
-
   font-size: 1.25rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.5rem; /* 120% */
   text-transform: capitalize;
+}
+
+.footersize {
+  font-size: 4rem;
+}
+
+@media (max-width: 1125px) {
+  .footersize {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 851px) {
+  .footersize {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 462px) {
+  .footersize {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 353px) {
+  .footersize {
+    font-size: 1rem;
+  }
 }
 
 /* Mobile View */
@@ -106,7 +132,7 @@
     text-align: center;
   }
   .flex_box {
-    flex-direction: column  ;
+    flex-direction: column;
     text-align: center !important;
   }
   .para {
@@ -180,14 +206,13 @@
   fill: #ffffff; /* Set the fill color to white */
 }
 
-.mysvg{
+.mysvg {
   display: flex;
   justify-content: space-evenly;
 }
 
-
-@media (max-width : 370px){
-  .list{
+@media (max-width: 370px) {
+  .list {
     flex-direction: column;
   }
   .list > li {
@@ -197,7 +222,7 @@
     font-size: 1rem !important ;
   }
 }
-@media(max-width :500px){
+@media (max-width: 500px) {
   .list > li {
     font-size: 1rem !important ;
   }

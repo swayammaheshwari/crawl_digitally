@@ -1,6 +1,6 @@
 // import Gallery from "../Carousal/Carousal";
-import VideoSection from "../videoSection/VideoSection";
 import styles from "./assets/style.module.css";
+import VideoSec from "./video/videoSection/VideoSec";
 
 const AboutComponent = () => {
   return (
@@ -11,7 +11,7 @@ const AboutComponent = () => {
           <h3>About Us</h3>
           <hr />
         </div>
-        <VideoSection />
+        <VideoSec />
         <div className={styles.contentdiv}>
           <h1>Welcome to Crawl Digitally !</h1>
           <p>

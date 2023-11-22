@@ -1,6 +1,6 @@
 .portfolio {
   width: 70%;
-  margin: 4rem auto;
+  margin: auto;
   padding: auto;
   text-align: center;
   z-index: 20;
@@ -15,7 +15,7 @@
 }
 
 .portfolio_div {
-  margin: 3rem auto;
+  margin: 1.5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,12 +26,12 @@
   height: 0;
 }
 .portfolio_div h3 {
-  margin: auto 1em;
+  margin: auto 1rem;
   font-size: 2rem;
 }
 
 .contentdiv {
-  padding: 9.5%;
+  padding: 5%;
   text-align: center;
 }
 .contentdiv > p {
@@ -50,7 +50,7 @@
     
   }
   .contentdiv > p {
-    padding: 2%;
+    /* padding: 2%; */
     text-align: justify;
   }
   .portfolio_div {

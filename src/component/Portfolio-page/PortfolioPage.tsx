@@ -5,11 +5,16 @@ import { Typography } from "@mui/material";
 
 export default function PortfolioPage() {
   return (
-    <>
+    <div className={styles.sidespacing}>
       <Box m={2}>
-        <Typography variant="h2" lineHeight="2" align="center">
-          Branding
-        </Typography>
+        {/* <Typography
+          variant="h2"
+          lineHeight="2"
+          align="center"
+          className={styles.socialtype}
+        >
+          Our Work
+        </Typography> */}
         <Box
           sx={{
             display: "flex",
@@ -17,20 +22,26 @@ export default function PortfolioPage() {
             alignContent: "center",
           }}
         >
-          <Grid container spacing={1}>
-            <Grid item xs={12} sm={12} md={6}>
-              <div className={styles.img_div}>
+          <Grid container spacing={2} className="h-full">
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={6}
+              className={"pt-3" + styles.brandingdiv}
+            >
+              <div className={styles.img_div + " " + styles.brandingdiv}>
                 <img
-                  src="portfolio_img/portfolio_1.png"
+                  src="portfolio_img/cover.png"
                   alt=""
                   className={styles.responsive_img}
                 />
               </div>
             </Grid>
-            <Grid item xs={12} sm={12} md={6}>
-              <div className={styles.img_div}>
+            <Grid item xs={12} sm={12} md={6} className={styles.brandingdiv}>
+              <div className={styles.img_div + " " + styles.brandingdiv}>
                 <img
-                  src="portfolio_img/portfolio_2.png"
+                  src="portfolio_img/2.png"
                   alt=""
                   className={styles.responsive_img}
                 />
@@ -39,61 +50,108 @@ export default function PortfolioPage() {
           </Grid>
         </Box>
       </Box>
+
       <Box m={2}>
-        <Typography variant="h2" lineHeight="2" align="center">
+        {/* <Typography variant="h2" lineHeight="2" align="center" className={styles.socialtype} >
           {" "}
           Social Media{" "}
-        </Typography>
+        </Typography> */}
+        <Grid container spacing={1} pt={2} >
+          <Grid item xs={12} sm={12} md={4}>
+            <div className={styles.img_div}>
+              <img
+                src="portfolio_img/skincare.png"
+                alt=""
+                className={styles.responsive_img}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={4}>
+            <div className={styles.img_div}>
+              <img
+                src="portfolio_img/elegantly1.png"
+                alt=""
+                className={styles.responsive_img}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={4}>
+            <div className={styles.img_div}>
+              <img
+                src="portfolio_img/final1.png"
+                alt=""
+                className={styles.responsive_img}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div className={styles.img_div}>
+              <img
+                src="portfolio_img/ds3.png"
+                alt=""
+                className={styles.responsive_img}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div className={styles.img_div}>
+              <img
+                src="portfolio_img/3.png"
+                alt=""
+                className={styles.responsive_img}
+              />
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={6} md={4}>
+            <div className={styles.img_div}>
+              <img
+                src="portfolio_img/payment1.png"
+                alt=""
+                className={styles.responsive_img}
+              />
+            </div>
+          </Grid>
+        </Grid>
+      </Box>
+
+      {/* vertical card */}
+      <Box m={2}>
+        {/* <Typography variant="h2" lineHeight="2" align="center" className={styles.socialtype} >
+          {" "}
+          Social Media{" "}
+        </Typography> */}
         <Grid container spacing={1}>
-          <Grid item xs={12} sm={12} md={4}>
-            <div className={styles.img_div}>
+          <Grid item xs={12} sm={12} md={3}>
+            <div className={styles.vhdiv}>
               <img
-                src="portfolio_img/portfolio_1.png"
+                src="portfolio_img/facewash.JPG"
                 alt=""
                 className={styles.responsive_img}
               />
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <div className={styles.img_div}>
+          <Grid item xs={12} sm={12} md={3}>
+            <div className={styles.vhdiv}>
               <img
-                src="portfolio_img/portfolio_2.png"
+                src="portfolio_img/ds1.jpg"
                 alt=""
                 className={styles.responsive_img}
               />
             </div>
           </Grid>
-          <Grid item xs={12} sm={12} md={4}>
-            <div className={styles.img_div}>
+          <Grid item xs={12} sm={12} md={3}>
+            <div className={styles.vhdiv}>
               <img
-                src="portfolio_img/portfolio_1.png"
+                src="portfolio_img/colgate1.jpg"
                 alt=""
                 className={styles.responsive_img}
               />
             </div>
           </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <div className={styles.img_div}>
+          <Grid item xs={12} sm={12} md={3}>
+            <div className={styles.vhdiv}>
               <img
-                src="portfolio_img/portfolio_1.png"
-                alt=""
-                className={styles.responsive_img}
-              />
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <div className={styles.img_div}>
-              <img
-                src="portfolio_img/portfolio_1.png"
-                alt=""
-                className={styles.responsive_img}
-              />
-            </div>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4}>
-            <div className={styles.img_div}>
-              <img
-                src="portfolio_img/portfolio_1.png"
+                src="portfolio_img/ds2.jpg"
                 alt=""
                 className={styles.responsive_img}
               />
@@ -102,9 +160,9 @@ export default function PortfolioPage() {
         </Grid>
       </Box>
       <Box m={2}>
-        <Typography variant="h2" lineHeight="2" align="center"  >
+        {/* <Typography variant="h2" lineHeight="2" align="center">
           Youtube
-        </Typography>
+        </Typography> */}
         <Grid container spacing={1}>
           <Grid item xs={12} sm={12} md={4}>
             <div className={styles.you_div}>
@@ -141,6 +199,6 @@ export default function PortfolioPage() {
           </Grid>
         </Grid>
       </Box>
-    </>
+    </div>
   );
 }
