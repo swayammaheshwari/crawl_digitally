@@ -68,7 +68,7 @@
   align-items: center;
 }
 .brandingdiv {
-  height: 50vh;
+  height: 60vh;
 }
 .brandingdiv > img {
   height: 100%;
@@ -119,13 +119,40 @@
 .vhdiv {
   display: flex;
   justify-content: center;
-  height: 55ch;
+  height: 50ch;
 }
 
-.responsive_img{
-  width: 100%;
-  height: 100%;
-  border-radius: 10%;
+.responsive_img {
+  width: auto;
+  height: auto;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.div1 {
+  background: url("portfolio_img/cover.png") no-repeat center center/cover;
+  border-radius: 5%;
+}
+.div2 {
+  background: url("portfolio_img/2.png") no-repeat center center/cover;
+  border-radius: 5%;
+}
+.vhimg1 {
+  background: url("portfolio_img/facewash.JPG") no-repeat center center/cover;
+  border-radius: 5%;
+}
+.vhimg2 {
+  background: url("portfolio_img/ds1.jpg") no-repeat center center/cover;
+  border-radius: 5%;
+}
+.vhimg3 {
+  background: url("portfolio_img/colgate1.jpg") no-repeat center center/cover;
+  border-radius: 5%;
+}
+.vhimg4 {
+  background: url("portfolio_img/ds2.jpg") no-repeat center center/cover;
+  border-radius: 5%;
 }
 
 @media (max-width: 369px) {

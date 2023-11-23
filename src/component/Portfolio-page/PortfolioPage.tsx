@@ -22,7 +22,7 @@ export default function PortfolioPage() {
             alignContent: "center",
           }}
         >
-          <Grid container spacing={2} className="h-full">
+          <Grid container spacing={5} className="h-full">
             <Grid
               item
               xs={12}
@@ -30,21 +30,29 @@ export default function PortfolioPage() {
               md={6}
               className={"pt-3" + styles.brandingdiv}
             >
-              <div className={styles.img_div + " " + styles.brandingdiv}>
-                <img
+              <div
+                className={
+                  styles.img_div + " " + styles.brandingdiv + " " + styles.div1
+                }
+              >
+                {/* <img
                   src="portfolio_img/cover.png"
                   alt=""
                   className={styles.responsive_img}
-                />
+                /> */}
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6} className={styles.brandingdiv}>
-              <div className={styles.img_div + " " + styles.brandingdiv}>
-                <img
+              <div
+                className={
+                  styles.img_div + " " + styles.brandingdiv + " " + styles.div2
+                }
+              >
+                {/* <img
                   src="portfolio_img/2.png"
                   alt=""
                   className={styles.responsive_img}
-                />
+                />*/}
               </div>
             </Grid>
           </Grid>
@@ -56,7 +64,7 @@ export default function PortfolioPage() {
           {" "}
           Social Media{" "}
         </Typography> */}
-        <Grid container spacing={1} pt={2}>
+        <Grid container spacing={3} pt={2}>
           <Grid item xs={12} sm={12} md={4}>
             <div className={styles.img_div}>
               <img
@@ -122,39 +130,39 @@ export default function PortfolioPage() {
         </Typography> */}
         <Grid container spacing={1}>
           <Grid item xs={12} sm={12} md={3}>
-            <div className={styles.vhdiv}>
-              <img
+            <div className={styles.vhdiv + " " + styles.vhimg1 }>
+              {/* <img
                 src="portfolio_img/facewash.JPG"
                 alt=""
                 className={styles.responsive_img}
-              />
+              /> */}
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={3}>
-            <div className={styles.vhdiv}>
-              <img
+            <div className={styles.vhdiv + " " + styles.vhimg2 }>
+              {/* <img
                 src="portfolio_img/ds1.jpg"
                 alt=""
                 className={styles.responsive_img}
-              />
+              /> */}
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={3}>
-            <div className={styles.vhdiv}>
-              <img
+            <div className={styles.vhdiv + " " + styles.vhimg3 }>
+              {/* <img
                 src="portfolio_img/colgate1.jpg"
                 alt=""
                 className={styles.responsive_img}
-              />
+              /> */}
             </div>
           </Grid>
           <Grid item xs={12} sm={12} md={3}>
-            <div className={styles.vhdiv}>
-              <img
+            <div className={styles.vhdiv + " " + styles.vhimg4 }>
+              {/* <img
                 src="portfolio_img/ds2.jpg"
                 alt=""
                 className={styles.responsive_img}
-              />
+              /> */}
             </div>
           </Grid>
         </Grid>

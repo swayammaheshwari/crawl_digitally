@@ -32,7 +32,7 @@ const SliderComponent: React.FC = () => {
     <div className="myswiper" style={{ position: "relative" }}>
       <div className="swiper">
         <div className="swiper-wrapper">
-          {[1, 2, 3, 4, 5].map((index) => (
+          {[1, 2, 3, 4].map((index) => (
             <div className="swiper-slide" key={index}>
               <div className="card">
                 <div className="card__image">
