@@ -1,8 +1,11 @@
 .contact {
+  font-family: "Sora", sans-serif;
   margin: 3rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: lighter;
+  font-size: 1.5em;
 }
 
 .contact hr {
@@ -14,6 +17,7 @@
 }
 
 .input {
+  font-family: "Montserrat", sans-serif;
   padding: 2px;
   max-width: 25rem;
   margin: 2rem auto;
@@ -36,9 +40,15 @@
 
 .button {
   align-items: center;
+  
 }
 
+
 .button button {
+  /* border-radius: 10% !important ;  */
+  font-family: "Poppins";
+  font-weight: bolder;
+
   color: #232323;
   margin-top: 1rem;
   width: 30%;

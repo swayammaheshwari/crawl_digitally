@@ -56,7 +56,7 @@ export default function PortfolioPage() {
           {" "}
           Social Media{" "}
         </Typography> */}
-        <Grid container spacing={1} pt={2} >
+        <Grid container spacing={1} pt={2}>
           <Grid item xs={12} sm={12} md={4}>
             <div className={styles.img_div}>
               <img
@@ -169,7 +169,7 @@ export default function PortfolioPage() {
               <iframe
                 width="100%"
                 height="315"
-                src="https://www.youtube.com/embed/ZlKnLyKO5UU"
+                src="https://www.youtube.com/embed/f6NAu_D3guc?si=no6VlzcAYSFOuEd9"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
@@ -180,7 +180,7 @@ export default function PortfolioPage() {
               <iframe
                 width="100%"
                 height="315"
-                src="https://www.youtube.com/embed/ZlKnLyKO5UU"
+                src="https://www.youtube.com/embed/pWhbfsteGQs?si=kakSBn5DVtM1eCh0"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>
@@ -191,7 +191,7 @@ export default function PortfolioPage() {
               <iframe
                 width="100%"
                 height="315"
-                src="https://www.youtube.com/embed/ZlKnLyKO5UU"
+                src="https://www.youtube.com/embed/BBPdlyxEduo?si=IJw8cPmRRSyJh7S3"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               ></iframe>

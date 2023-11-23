@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import play from "./assets/play.png";
 import pause from "./assets/pause.png";
-
+import vid from './assets/whatwecandoforyou.mp4'
 const VideoSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -55,31 +55,28 @@ const VideoSection: React.FC = () => {
   };
 
   return (
-    <div className="w-[98%] max-w-[1300px] mx-auto pt-16 text-center">
-      <div className="relative" style={{ width: "80%", margin: "auto" }}>
-        <video
-          ref={videoRef}
-          width="100%"
-          height="auto"
-          className="rounded-3xl"
-        >
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <button
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          onClick={togglePlayPause}
-        >
-          {isPlaying ? (
-            <img className="w-[42px] h-[42px]" src={pause} alt="Pause" />
-          ) : (
-            <img className="w-[42px] h-[42px]" src={play} alt="Play" />
-          )}
-        </button>
-      </div>
+    <div className="w-[98%] max-w-[600px]  mx-auto  text-center">
+    <div className="relative" style={{ width: "80%", margin: "auto" }}>
+      <video
+        ref={videoRef}
+        width="100%"
+        height="auto"
+        className="rounded-3xl"
+      >
+        <source src={vid} type="video/mp4" />
+      </video>
+      <button
+        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        onClick={togglePlayPause}
+      >
+        {isPlaying ? (
+          <img className="w-[42px] h-[42px]" src={pause} alt="Pause" />
+        ) : (
+          <img className="w-[42px] h-[42px]" src={play} alt="Play" />
+        )}
+      </button>
     </div>
+  </div>
   );
 };
 

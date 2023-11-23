@@ -7,7 +7,7 @@ const Contact = () => {
     <>
       <div className={styles.contact}>
         <hr />
-        <h3>Contact US</h3>
+        <h3>Contact Us</h3>
         <hr />
       </div>
       <div className={styles.input}>
@@ -21,7 +21,7 @@ const Contact = () => {
           placeholder="Enter your Message"
         />
         <Stack className={styles.button}>
-          <Button variant="contained">Send</Button>
+          <Button variant="contained" className='rounded-md' >Submit</Button>
         </Stack>
       </div>
     </>

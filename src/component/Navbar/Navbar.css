@@ -5,6 +5,7 @@
   }
   
   .navbar {
+    font-family: 'Sora', sans-serif;
     background:  #101010;
     height: 90px;
     display: flex;

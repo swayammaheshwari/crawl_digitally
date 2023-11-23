@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import play from "./assets/play.png";
 import pause from "./assets/pause.png";
-
+import vid from "./assets/whatwecandoforyou.mp4";
 const VideoSec: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -63,10 +63,7 @@ const VideoSec: React.FC = () => {
           height="auto"
           className="rounded-3xl"
         >
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
+          <source src={vid} type="video/mp4" />
         </video>
         <button
           className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"

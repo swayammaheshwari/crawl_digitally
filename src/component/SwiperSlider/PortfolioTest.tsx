@@ -33,14 +33,10 @@ const SliderComponent: React.FC = () => {
       <div className="swiper">
         <div className="swiper-wrapper">
           {[1, 2, 3, 4, 5].map((index) => (
-            <div className="swiper-slide"  key={index}>
+            <div className="swiper-slide" key={index}>
               <div className="card">
                 <div className="card__image">
-                  <img
-                    src={`https://picsum.photos/800/600?random=${index}`}
-                    alt=""
-                    
-                  />
+                  <img src={`sliderimage/img${index}.png`} alt="" />
                 </div>
               </div>
             </div>

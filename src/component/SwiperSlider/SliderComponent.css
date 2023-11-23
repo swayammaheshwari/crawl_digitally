@@ -18,6 +18,12 @@
 
 .card__image img {
   border-radius: 24px;
+  width: 100% !important ;
+  height: 100% !important ;
+}
+
+.card__image {
+  height: 60vh;
 }
 
 .card__title {
