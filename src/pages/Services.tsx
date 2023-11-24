@@ -4,6 +4,7 @@ import Navbar from "../component/Navbar/NavBar";
 import Service from "../component/Services/Service";
 import React, { useEffect, useRef, useState } from "react";
 import ServicesCard from "../component/Services/ServicesCard";
+import ServicesSlider from "../ServicesSlider/ServicesSlider";
 function Services() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -23,14 +24,16 @@ function Services() {
       <Navbar />
       {windowWidth < 768 ? (
         <>
-          {/* <Service /> */}
-          <ServicesCard/>
+          {/* <Service />
+          <ServicesCard /> */}
+          <ServicesSlider />
           <Footer />
         </>
       ) : (
         <>
-          <CardGrid />
-          <Service />
+          {/* <CardGrid />
+          <Service /> */}
+          <ServicesSlider />
           <Footer />
         </>
       )}

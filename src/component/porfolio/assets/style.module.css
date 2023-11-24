@@ -1,5 +1,5 @@
 .portfolio {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   width: 70%;
   margin: 4rem auto;
   padding: auto;
@@ -48,17 +48,40 @@
   .portfolio {
     width: 100% !important;
     text-align: justify !important ;
-    
+    margin: 1rem auto;
   }
   .contentdiv > p {
     padding: 2%;
     text-align: justify;
   }
   .portfolio_div {
-    margin: 1rem auto;
+    margin: 1rem auto !important ;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: justify;
+  }
+} 
+
+
+@media (max-width : 515px){
+  .portfolio{
+    padding: 0% 10%;
+  }
+  .portfolio h1 {
+    font-size: 1.5rem;
+  }
+  .portfolio  p {
+    font-size: 0.9rem;
+    font-weight: 100 !important ;
+  }
+}
+@media (max-width : 386px){
+  .portfolio h1 {
+    font-size: 1rem;
+  }
+  .portfolio  p {
+    font-size: 0.5rem;
+    font-weight: 100 !important ;
   }
 }

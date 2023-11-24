@@ -1,3 +1,7 @@
+.maincontact{
+  padding: 0rem 2rem /*this is for side padding in the contact form*/
+}
+
 .contact {
   font-family: "Sora", sans-serif;
   margin: 3rem auto;
@@ -6,11 +10,12 @@
   align-items: center;
   font-weight: lighter;
   font-size: 1.5em;
+ 
 }
 
 .contact hr {
   width: 8%;
-  height: 0;
+  height: 0%;
 }
 .contact h3 {
   margin: auto 1em;
@@ -18,8 +23,8 @@
 
 .input {
   font-family: "Montserrat", sans-serif;
-  padding: 2px;
-  max-width: 25rem;
+  padding: 6px;
+  max-width: 30rem;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -27,22 +32,20 @@
 
 .input input {
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   background-color: #232323;
-  padding: 0.9rem;
+  padding: 0.6rem;
   margin: 0.5rem;
-  height: 1.5rem;
 }
 
 .input .last_input {
-  padding: 1rem 1rem 4rem;
+  padding: 1rem 0.6rem 4rem;
 }
 
 .button {
   align-items: center;
-  
+ font-size: 25rem;
 }
-
 
 .button button {
   /* border-radius: 10% !important ;  */
@@ -53,4 +56,10 @@
   margin-top: 1rem;
   width: 30%;
   background-color: #ffffff;
+}
+
+@media (max-width: 769px) {
+  .contact {
+    margin: 0rem auto;
+  }
 }

@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 export default function PortfolioPage() {
   return (
     <div className={styles.sidespacing}>
-      <Box m={2}>
+      <Box >
         {/* <Typography
           variant="h2"
           lineHeight="2"
@@ -21,6 +21,7 @@ export default function PortfolioPage() {
             justifyContent: "center",
             alignContent: "center",
           }}
+          m={5}
         >
           <Grid container spacing={5} className="h-full">
             <Grid
@@ -35,11 +36,11 @@ export default function PortfolioPage() {
                   styles.img_div + " " + styles.brandingdiv + " " + styles.div1
                 }
               >
-                {/* <img
+                <img
                   src="portfolio_img/cover.png"
                   alt=""
                   className={styles.responsive_img}
-                /> */}
+                />
               </div>
             </Grid>
             <Grid item xs={12} sm={12} md={6} className={styles.brandingdiv}>
@@ -48,18 +49,18 @@ export default function PortfolioPage() {
                   styles.img_div + " " + styles.brandingdiv + " " + styles.div2
                 }
               >
-                {/* <img
+                <img
                   src="portfolio_img/2.png"
                   alt=""
                   className={styles.responsive_img}
-                />*/}
+                />
               </div>
             </Grid>
           </Grid>
         </Box>
       </Box>
 
-      <Box m={2}>
+      <Box m={5}>
         {/* <Typography variant="h2" lineHeight="2" align="center" className={styles.socialtype} >
           {" "}
           Social Media{" "}
@@ -123,7 +124,7 @@ export default function PortfolioPage() {
       </Box>
 
       {/* vertical card */}
-      <Box m={2}>
+      <Box  m={5}>
         {/* <Typography variant="h2" lineHeight="2" align="center" className={styles.socialtype} >
           {" "}
           Social Media{" "}

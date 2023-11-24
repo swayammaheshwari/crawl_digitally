@@ -130,14 +130,18 @@
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
-.div1 {
-  background: url("portfolio_img/cover.png") no-repeat center center/cover;
+/* .div1 {
+  background: url("portfolio_img/cover.png");
+  background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: center;
   border-radius: 5%;
 }
+
 .div2 {
   background: url("portfolio_img/2.png") no-repeat center center/cover;
   border-radius: 5%;
-}
+} */
 .vhimg1 {
   background: url("portfolio_img/facewash.JPG") no-repeat center center/cover;
   border-radius: 5%;
@@ -220,5 +224,15 @@
   }
   .tab-view-only {
     display: none !important;
+  }
+}
+/* branding */
+@media (max-width: 420px) {
+  .brandingdiv {
+    height: 40vh;
+  }
+  .vhdiv {
+    
+    height: 30ch;
   }
 }
