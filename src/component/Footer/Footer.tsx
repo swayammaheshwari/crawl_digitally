@@ -21,7 +21,7 @@ const Footer = () => {
             <h1
               className={`flex flex-col px-3  flex-nowrap ` + styles.footersize}
             >
-              <span className=" flex  align-middle justify-center ">
+              <span className=" flex pt-5 align-middle justify-center ">
                 Would you like to get along?
               </span>
               <span>Let's chat!</span>

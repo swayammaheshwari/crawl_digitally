@@ -88,7 +88,7 @@ function Home() {
         </div>
       )}
 
-      <div style={{ position: "relative", zIndex: 88, paddingTop: "5%" }}>
+      <div style={{ position: "relative", zIndex: 88 }}>
         <PortfolioContain />
         <SliderComponent />
         <Contact />

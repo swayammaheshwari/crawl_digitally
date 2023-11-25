@@ -71,7 +71,7 @@ const ServicesSlider: React.FC = () => {
         {data.map((item, index) => {
           return (
             <div key={index}>
-              <SwiperSlide>
+              <SwiperSlide style={{margin:"20px"}} >
                 <Card item={item} />
               </SwiperSlide>
             </div>

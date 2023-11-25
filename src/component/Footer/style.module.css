@@ -228,6 +228,11 @@
   .para {
     font-size: 1rem !important ;
   }
+  .chat {
+   
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
 }
 @media (max-width: 382px) {
   .list > li {
@@ -235,3 +240,13 @@
   }
 
 }
+
+@media (max-width : 400px){
+  .list > li {
+    font-size: .9rem !important ;
+  }
+  .para {
+    font-size: .9rem !important ;
+  }
+}
+

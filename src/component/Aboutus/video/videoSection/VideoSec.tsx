@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import play from "./assets/play.png";
 import pause from "./assets/pause.png";
 import vid from "./assets/whatwecandoforyou.mp4";
+import thum from "../videoSection/assets/thumb.png.jpg";
 const VideoSec: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -62,6 +63,7 @@ const VideoSec: React.FC = () => {
           width="100%"
           height="auto"
           className="rounded-3xl"
+          poster={thum}
         >
           <source src={vid} type="video/mp4" />
         </video>
