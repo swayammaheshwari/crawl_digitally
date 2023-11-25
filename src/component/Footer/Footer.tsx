@@ -30,41 +30,63 @@ const Footer = () => {
           </div>
           <div className={styles.flex_box}>
             <div className="flex  md:justify-start md:align-middle justify-center   ">
-              <AiFillLinkedin
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  padding: "2px",
-                  cursor: "pointer",
-                }}
-              />
+              <a
+                href="https://www.linkedin.com/company/crawldigitally/?originalSubdomain=in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillLinkedin
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    padding: "2px",
+                    cursor: "pointer",
+                  }}
+                />
+              </a>
 
-              <AiFillInstagram
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  cursor: "pointer",
-                  padding: "2px",
-                }}
-              />
-
-              <BsYoutube
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  cursor: "pointer",
-                  padding: "2px",
-                }}
-              />
-
-              <BiLogoFacebookSquare
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  cursor: "pointer",
-                  padding: "2px",
-                }}
-              />
+              <a
+                href="https://www.instagram.com/crawldigitally/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillInstagram
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    cursor: "pointer",
+                    padding: "2px",
+                  }}
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/@crawldigitally8492"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsYoutube
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    cursor: "pointer",
+                    padding: "2px",
+                  }}
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/crawldigitally/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BiLogoFacebookSquare
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    cursor: "pointer",
+                    padding: "2px",
+                  }}
+                />
+              </a>
             </div>
 
             <div className={styles.list_box}>

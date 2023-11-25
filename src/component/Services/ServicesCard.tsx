@@ -1,199 +1,51 @@
 import React from "react";
+import Card from "../ServicesSlider/assets/Card";
+
+const data = [
+  {
+    name: "Brand Solution",
+    discription:
+      "Where We Weave The Web Of Creativity. As A Power Of Bold Ideas, Vivid Storytelling, And Extraordinary Experiences",
+    img: "serviceimg/brand1.png",
+  },
+  {
+    name: "Photography & Videography",
+    discription:
+      "Where We Weave The Web Of Creativity. As A Power Of Bold Ideas, Vivid Storytelling, And Extraordinary Experiences",
+    img: "serviceimg/photovideo1.png",
+  },
+  {
+    name: "Social Media Marketing",
+    discription:
+      "Where We Weave The Web Of Creativity. As A Power Of Bold Ideas, Vivid Storytelling, And Extraordinary Experiences",
+    img: "serviceimg/social1.png",
+  },
+  {
+    name: "Performance Marketing",
+    discription:
+      "Where We Weave The Web Of Creativity. As A Power Of Bold Ideas, Vivid Storytelling, And Extraordinary Experiences",
+    img: "serviceimg/performance1.png",
+  },
+  {
+    name: "Influencer Marketing",
+    discription:
+      "Where We Weave The Web Of Creativity. As A Power Of Bold Ideas, Vivid Storytelling, And Extraordinary Experiences",
+    img: "serviceimg/influencer1.png",
+  },
+];
 
 const ServicesCard: React.FC = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap -m-4">
-          {/* 1 section */}
-          <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="/services_img/Service_1.png"
-                alt="blog"
-              />
-              <div className="p-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  Design & Development Services
-                </h2>
-                <h1 className="title-font text-lg font-medium  mb-2 pt-2 ">
-                  Website Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  E-Commerce & WordPress
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  Application Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  User Experience
-                </h1>
-                {/* <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p> */}
-              </div>
-            </div>
+    <>
+      {data.map((item, index) => {
+        return (
+          <div key={index} className="p-5" >
+            
+              <Card item={item} />
           </div>
-          {/* 2 section */}
-          <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="/services_img/Service_1.png"
-                alt="blog"
-              />
-              <div className="p-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  Design & Development Services
-                </h2>
-                <h1 className="title-font text-lg font-medium  mb-2 pt-2 ">
-                  Website Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  E-Commerce & WordPress
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  Application Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  User Experience
-                </h1>
-                {/* <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p> */}
-              </div>
-            </div>
-          </div>
-          {/*  3 section */}
-          <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="/services_img/Service_1.png"
-                alt="blog"
-              />
-              <div className="p-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  Design & Development Services
-                </h2>
-                <h1 className="title-font text-lg font-medium  mb-2 pt-2 ">
-                  Website Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  E-Commerce & WordPress
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  Application Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  User Experience
-                </h1>
-                {/* <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p> */}
-              </div>
-            </div>
-          </div>
-          {/* 4 section */}
-          <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="/services_img/Service_1.png"
-                alt="blog"
-              />
-              <div className="p-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  Design & Development Services
-                </h2>
-                <h1 className="title-font text-lg font-medium  mb-2 pt-2 ">
-                  Website Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  E-Commerce & WordPress
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  Application Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  User Experience
-                </h1>
-                {/* <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p> */}
-              </div>
-            </div>
-          </div>
-          {/* 5 section */}
-          <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="/services_img/Service_1.png"
-                alt="blog"
-              />
-              <div className="p-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  Design & Development Services
-                </h2>
-                <h1 className="title-font text-lg font-medium  mb-2 pt-2 ">
-                  Website Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  E-Commerce & WordPress
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  Application Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  User Experience
-                </h1>
-                {/* <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p> */}
-              </div>
-            </div>
-          </div>
-          {/* 6 section  */}
-          <div className="p-4 md:w-1/3">
-            <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-              <img
-                className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="/services_img/Service_1.png"
-                alt="blog"
-              />
-              <div className="p-6">
-                <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                  Design & Development Services
-                </h2>
-                <h1 className="title-font text-lg font-medium  mb-2 pt-2 ">
-                  Website Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  E-Commerce & WordPress
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  Application Development
-                </h1>
-                <h1 className="title-font text-lg font-medium  mb-2">
-                  User Experience
-                </h1>
-                {/* <p className="leading-relaxed mb-3">
-                  Photo booth fam kinfolk cold-pressed sriracha leggings
-                  jianbing microdosing tousled waistcoat.
-                </p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        );
+      })}
+    </>
   );
 };
 
