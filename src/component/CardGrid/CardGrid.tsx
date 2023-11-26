@@ -1,5 +1,5 @@
 import styles from "./assets/style.module.css";
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect, useRef, useState } from "react";
 
 const CardGrid = () => {
   const containerRef = useRef<HTMLDivElement>(null);

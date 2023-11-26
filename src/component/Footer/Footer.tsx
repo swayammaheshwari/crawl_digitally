@@ -1,12 +1,17 @@
 import Box from "@mui/material/Box";
 import styles from "./style.module.css";
-import emoji from "./assets/handshake.png";
 import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 import { BsYoutube } from "react-icons/bs";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { Link } from "react-router-dom";
 const Footer = () => {
-  const stylesbg: object = {
+  interface Styles {
+    main: {
+      zIndex: string;
+      position: string;
+    };
+  }
+  const stylesbg: Styles = {
     main: {
       zIndex: "60",
       position: "relative",
@@ -14,7 +19,7 @@ const Footer = () => {
   };
 
   return (
-    <div style={stylesbg.main}>
+    <div style={stylesbg.main as React.CSSProperties}>
       <Box>
         <div className={styles.chat}>
           <div className={styles.inner_div}>
@@ -29,7 +34,7 @@ const Footer = () => {
             <hr />
           </div>
           <div className={styles.flex_box}>
-            <div className="flex  md:justify-start md:align-middle justify-center   ">
+            <div className="flex   md:align-middle justify-center   ">
               <a
                 href="https://www.linkedin.com/company/crawldigitally/?originalSubdomain=in"
                 target="_blank"
@@ -88,20 +93,19 @@ const Footer = () => {
                 />
               </a>
             </div>
-
             <div className={styles.list_box}>
               <ul className={styles.list}>
                 <li className="cursor-pointer">
-                  <Link to="/career"> About Us</Link>
+                  <Link to="/career"> About</Link>
                 </li>
                 <li className="cursor-pointer">
-                  <Link to="/portfolio">Portfolio </Link>{" "}
+                  <Link to="/portfolio">Portfolio</Link>{" "}
                 </li>
                 <li className="cursor-pointer">
-                  <Link to="/contact">Contact Us</Link>{" "}
+                  <Link to="/contact">Contact</Link>{" "}
                 </li>
                 <li className="cursor-pointer">
-                  <Link to="/services">Services </Link>{" "}
+                  <Link to="/services">Services</Link>{" "}
                 </li>
               </ul>
             </div>

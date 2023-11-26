@@ -5,10 +5,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
-import { useEffect, useState } from "react";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState } from "react";
 import { Preloader } from "./component/Preloader/Preloader";
 
 const theme = createTheme({
@@ -46,13 +43,9 @@ function App() {
     },
   ]);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 3000);
-    // ////////////SCROLL-ANIMATION////////////
-  
-  }, []);
+  window.onload = () => {
+    setIsLoading(false);
+  };
   return (
     <>
       {isLoading ? (

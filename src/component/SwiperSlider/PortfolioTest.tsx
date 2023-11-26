@@ -23,8 +23,9 @@ const SliderComponent: React.FC = () => {
   useEffect(() => {
     const swiperElements = document.querySelectorAll(".myswiper");
     swiperElements.forEach((element) => {
-      element.style.cursor = "url('logocrawl.ico'), auto";
-      element.style.borderRadius = "50%";
+      const elementAsHTMLElement = element as HTMLElement;
+      elementAsHTMLElement.style.cursor = "url('logocrawl.ico'), auto";
+      elementAsHTMLElement.style.borderRadius = "50%";
     });
   }, []);
 

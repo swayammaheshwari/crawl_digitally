@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import styles from "./style.module.css";
-import { Typography } from "@mui/material";
+
 
 export default function PortfolioPage() {
   return (

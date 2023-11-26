@@ -1,7 +1,12 @@
 import React from "react";
 import Card from "../ServicesSlider/assets/Card";
+interface ServiceItem {
+  name: string;
+  discription: string;
+  img: string;
+}
 
-const data = [
+const data: ServiceItem[] = [
   {
     name: "Brand Solution",
     discription:
@@ -39,9 +44,8 @@ const ServicesCard: React.FC = () => {
     <>
       {data.map((item, index) => {
         return (
-          <div key={index} className="p-5" >
-            
-              <Card item={item} />
+          <div key={index} className="p-5">
+            <Card item={item} />
           </div>
         );
       })}

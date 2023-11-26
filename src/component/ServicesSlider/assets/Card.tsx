@@ -1,10 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./style.module.css";
-const Card: React.FC = ({ item }) => {
+
+interface CardProps {
+  item: {
+    name: string;
+    discription: string;
+    img: string;
+  };
+}
+const Card: React.FC<CardProps> = ({ item }) => {
   return (
     <>
-     
-
       <div className="max-w-sm bg-white border border-gray-200 rounded-3xl shadow">
         <div className="p-5">
           <a href="#">

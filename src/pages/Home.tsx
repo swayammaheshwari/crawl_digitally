@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Contact from "../component/Contact/Contact";
 import Footer from "../component/Footer/Footer";
 import Header from "../component/header/Header";
@@ -78,8 +78,7 @@ function Home() {
   }, []);
   return (
     <>
-    
-       <Navbar />
+      <Navbar />
       {windowWidth < 768 ? (
         <MobHeader />
       ) : (

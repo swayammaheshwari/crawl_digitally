@@ -1,8 +1,6 @@
-import CardGrid from "../component/CardGrid/CardGrid";
 import Footer from "../component/Footer/Footer";
 import Navbar from "../component/Navbar/NavBar";
-import Service from "../component/Services/Service";
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ServicesCard from "../component/Services/ServicesCard";
 import ServicesSlider from "../component/ServicesSlider/ServicesSlider";
 function Services() {
@@ -25,7 +23,9 @@ function Services() {
       {windowWidth < 768 ? (
         <>
           {/* <Service /> */}
-          <ServicesCard />
+          <div style={{textAlign:"center", display:"flex",justifyContent :"center", flexDirection:"column",alignItems:'center'}} >
+            <ServicesCard />
+          </div>
           {/* <ServicesSlider /> */}
           <Footer />
         </>

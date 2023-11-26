@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import play from "./assets/play.png";
 import pause from "./assets/pause.png";
 import vid from "./assets/whatwecandoforyou.mp4";
-import thumb from "./assets/thumb.png.jpg";
+import post from "./assets/poster.png";
 
 const VideoSection: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -62,9 +62,10 @@ const VideoSection: React.FC = () => {
         <video
           ref={videoRef}
           width="100%"
-          height="auto"
+          height="50%"
           className="rounded-3xl"
-          poster={thumb}
+          poster={post}
+          
         >
           <source src={vid} type="video/mp4" />
         </video>
