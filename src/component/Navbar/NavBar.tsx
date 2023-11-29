@@ -11,6 +11,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
@@ -27,7 +28,7 @@ function Navbar() {
                 <NavLink
                   to="/"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")  
                   }
                   onClick={closeMobileMenu}
                 >
@@ -36,31 +37,20 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Contact Us
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
                   to="/career"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")
                   }
                   onClick={closeMobileMenu}
                 >
-                  Career
+                  About
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
                   to="/portfolio"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")
                   }
                   onClick={closeMobileMenu}
                 >
@@ -71,11 +61,22 @@ function Navbar() {
                 <NavLink
                   to="/services"
                   className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
+                    "nav-links " + (isActive ? " activated " : "")
                   }
                   onClick={closeMobileMenu}
                 >
                   Services
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    "nav-links " + (isActive ? " activated" : "")
+                  }
+                  onClick={closeMobileMenu}
+                >
+                  Contact Us
                 </NavLink>
               </li>
             </ul>

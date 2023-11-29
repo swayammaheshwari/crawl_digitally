@@ -1,8 +1,19 @@
+/* Import the base styles */
+@import "tailwindcss/base";
+
+/* Import the component styles */
+@import "tailwindcss/components";
+
+/* Your custom styles go here */
+
+/* Import the utility styles */
+@import "tailwindcss/utilities";
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  z-index: 1;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #101010;
@@ -42,4 +53,8 @@
   .tab-view-only {
     display: none !important;
   }
+}
+canvas {
+  height: 100vh !important;
+  width: 12px !important ;
 }

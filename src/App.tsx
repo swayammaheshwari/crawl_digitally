@@ -1,17 +1,21 @@
 import Home from "./pages/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import Career from "./pages/Career";
 import Contact from "./pages/Contact";
+import { useState } from "react";
+import { Preloader } from "./component/Preloader/Preloader";
 
 const theme = createTheme({
-  direction: 'rtl',
+  direction: "rtl",
   // other theme properties
 });
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+
   const router = createBrowserRouter([
     {
       children: [
@@ -39,11 +43,18 @@ function App() {
     },
   ]);
 
+  window.onload = () => {
+    setIsLoading(false);
+  };
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <RouterProvider router={router} />
-      </ThemeProvider>
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <ThemeProvider theme={theme}>
+          <RouterProvider router={router} />
+        </ThemeProvider>
+      )}
     </>
   );
 }

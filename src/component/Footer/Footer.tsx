@@ -1,114 +1,121 @@
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import { Link } from "react-router-dom";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import AssistWalkerIcon from "@mui/icons-material/AssistWalker";
-import InstagramIcon from "@mui/icons-material/Instagram";
+import Box from "@mui/material/Box";
 import styles from "./style.module.css";
-
+import { AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { BsYoutube } from "react-icons/bs";
+import { BiLogoFacebookSquare } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Footer = () => {
-
+  interface Styles {
+    main: {
+      zIndex: string;
+      position: string;
+    };
+  }
+  const stylesbg: Styles = {
+    main: {
+      zIndex: "60",
+      position: "relative",
+    },
+  };
 
   return (
-    <>
-      <Box mb={5}>
-        <Grid container>
-          <Grid item xs={12} sm={6} md={4} xl={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center' }} >
-            <Box >
-              <Typography variant="h6" color="#fffff" >
-                Would you like to get along? Let's chat
-              </Typography>
-            </Box>
-          </Grid>
-          <Grid container item xs={12} sm={6} md={4} xl={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center' }}  >
-            <Grid item xs={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center' }} >
-              <Box>
-                <Typography variant="h6" className={styles.typo}>Services</Typography>
-                <ul className={styles.li}>
-                  <li>
-                    <Link className={styles.link} to="/portfoilio">
-                      Web design
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Hosting
-                    </Link>
-                  </li>
-                </ul>
-              </Box>
-            </Grid>
-            <Grid item xs={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center' }} >
-              <Box>
-                <Typography variant="h6" className={styles.typo}>About</Typography>
-                <ul className={styles.li}>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Company
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Team
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Legacy
-                    </Link>
-                  </li>
-                </ul>
-              </Box>
-            </Grid>
-            <Grid item xs={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center' }}>
-              <Box>
-                <Typography variant="h6" className={styles.typo}>Careers</Typography>
-                <ul className={styles.li}>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Job openings
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Employee success
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className={styles.link} to="#">
-                      Benefits
-                    </Link>
-                  </li>
-                </ul>
-              </Box>
-            </Grid>
-          </Grid>
-          <Grid item xs={12} sm={6} md={4} xl={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'flex-end' }} >
-            <Box >
-              <Link to="#">
-                <FacebookIcon />
-              </Link>
-              <Link to="#">
-                <TwitterIcon />
-              </Link>
-              <Link to="#">
-                <AssistWalkerIcon />
-              </Link>
-              <Link to="#">
-                <InstagramIcon />
-              </Link>
-            </Box>
-          </Grid>
-        </Grid>
+    <div style={stylesbg.main as React.CSSProperties}>
+      <Box>
+        <div className={styles.chat}>
+          <div className={styles.inner_div}>
+            <h1
+              className={`flex flex-col px-3  flex-nowrap ` + styles.footersize}
+            >
+              <span className=" flex pt-5 align-middle justify-center ">
+                Would you like to get along?
+              </span>
+              <span>Let's chat!</span>
+            </h1>
+            <hr />
+          </div>
+          <div className={styles.flex_box}>
+            <div className="flex   md:align-middle justify-center   ">
+              <a
+                href="https://www.linkedin.com/company/crawldigitally/?originalSubdomain=in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillLinkedin
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    padding: "2px",
+                    cursor: "pointer",
+                  }}
+                />
+              </a>
+
+              <a
+                href="https://www.instagram.com/crawldigitally/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillInstagram
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    cursor: "pointer",
+                    padding: "2px",
+                  }}
+                />
+              </a>
+              <a
+                href="https://www.youtube.com/@crawldigitally8492"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsYoutube
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    cursor: "pointer",
+                    padding: "2px",
+                  }}
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/crawldigitally/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BiLogoFacebookSquare
+                  style={{
+                    width: "40px",
+                    height: "40px",
+                    cursor: "pointer",
+                    padding: "2px",
+                  }}
+                />
+              </a>
+            </div>
+            <div className={styles.list_box}>
+              <ul className={styles.list}>
+                <li className="cursor-pointer">
+                  <Link to="/career"> About</Link>
+                </li>
+                <li className="cursor-pointer">
+                  <Link to="/portfolio">Portfolio</Link>{" "}
+                </li>
+                <li className="cursor-pointer">
+                  <Link to="/contact">Contact</Link>{" "}
+                </li>
+                <li className="cursor-pointer">
+                  <Link to="/services">Services</Link>{" "}
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className={styles.para}>all rights reserved.</p>
+            </div>
+          </div>
+        </div>
       </Box>
-    </>
+    </div>
   );
 };
 
