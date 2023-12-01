@@ -110,7 +110,7 @@ function MobHeader() {
       />
       <div className={styles.bottomstyle}>
         <section className={styles.header}>
-          <h2>WE WAVE THE WEB OF</h2>
+          <h2>WE CRAWL THE WEB OF</h2>
           <h1>CREATIVITY</h1>
           {windowWidth < 450 ? (
             <p>LET'S CRAWL, WALK, AND SOAR TOGETHER.</p>

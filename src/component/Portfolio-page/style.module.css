@@ -67,13 +67,13 @@
   justify-content: center;
   align-items: center;
 }
-.brandingdiv {
+/* .brandingdiv {
   height: 60vh;
-}
+} */
 .brandingdiv > img {
   height: 100%;
   width: 100%;
-  /* object-fit: fill; */
+  object-fit: fill;
 }
 
 /* .chat div h1 img {
@@ -124,8 +124,8 @@
 }
 
 .responsive_img {
-  width: auto;
-  height: auto;
+  /* width: auto;
+  height: auto; */
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -229,9 +229,9 @@
 }
 /* branding */
 @media (max-width: 420px) {
-  .brandingdiv {
+  /* .brandingdiv {
     height: 40vh;
-  }
+  } */
   .vhdiv {
     height: 45ch;
   }

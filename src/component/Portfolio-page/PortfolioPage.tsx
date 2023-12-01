@@ -46,7 +46,7 @@ export default function PortfolioPage() {
                   }
                 >
                   <img
-                    src="portfolio_img/cover.png"
+                    src="portfolio_img/sp.png"
                     alt=""
                     className={styles.responsive_img}
                   />
